@@ -72,17 +72,17 @@ React、React Hooks、Javascript 、CSS、Mobx
 <hr>
 
 
-![](preview/1.png)
+![](React-Mobx-Todo-List/preview/1.png)
 
 <hr>
 
 
-![](preview/2.png)
+![](React-Mobx-Todo-List/preview/2.png)
 
 <hr>
 
 
-![](preview/3.png)
+![](React-Mobx-Todo-List/preview/3.png)
 
 <hr>
 
