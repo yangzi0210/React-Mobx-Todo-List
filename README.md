@@ -1,9 +1,61 @@
 # React-Mobx-Todo-List
-### 技术栈：
+<img src ='https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1920px-React-icon.svg.png' width = 33%>
+
+## 技术栈：
 
 React、React Hooks、Javascript 、CSS、Mobx
 
-### 相关知识
+
+
+## 功能列表
+
+1. 列表渲染
+2. 单选实现
+3. 全选实现
+4. 删除功能
+5. 新增功能
+6. 统计计数
+
+## 预览
+
+<hr>
+
+
+![](React-Mobx-Todo-List/preview/1.png)
+
+<hr>
+
+
+![](React-Mobx-Todo-List/preview/2.png)
+
+<hr>
+
+
+![](React-Mobx-Todo-List/preview/3.png)
+
+<hr>
+
+
+## 用法：
+
+#### yarn (安装依赖)
+
+#### yarn start
+
+Runs the app in the development mode.
+Open http://localhost:3000 to view it in your browser. The page will reload when you make changes. You may also see any lint errors in the console.
+
+#### yarn test
+
+Launches the test runner in the interactive watch mode. See the section about running tests for more information.
+
+#### yarn build
+
+Builds the app for production to the build folder.
+It correctly bundles React in production mode and optimizes the build for the best performance.
+The build is minified and the filenames include the hashes.
+Your app is ready to be deployed!
+## 相关知识
 
 - 双向绑定
 
@@ -57,52 +109,3 @@ React、React Hooks、Javascript 、CSS、Mobx
     注意：<br>
          (1)通过类名直接调用，不能通过实例对象调用<br>
          (2)静态函数中的this指向类(即 User)，this只能调用静态方法和静态属性
-
-### 功能列表
-
-1. 列表渲染
-2. 单选实现
-3. 全选实现
-4. 删除功能
-5. 新增功能
-6. 统计计数
-
-### 预览
-
-<hr>
-
-
-![](React-Mobx-Todo-List/preview/1.png)
-
-<hr>
-
-
-![](React-Mobx-Todo-List/preview/2.png)
-
-<hr>
-
-
-![](React-Mobx-Todo-List/preview/3.png)
-
-<hr>
-
-
-### 用法：
-
-#### yarn (安装依赖)
-
-#### yarn start
-
-Runs the app in the development mode.
-Open http://localhost:3000 to view it in your browser. The page will reload when you make changes. You may also see any lint errors in the console.
-
-#### yarn test
-
-Launches the test runner in the interactive watch mode. See the section about running tests for more information.
-
-#### yarn build
-
-Builds the app for production to the build folder.
-It correctly bundles React in production mode and optimizes the build for the best performance.
-The build is minified and the filenames include the hashes.
-Your app is ready to be deployed!
