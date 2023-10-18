@@ -2,9 +2,11 @@ import "./index.css";
 import { useStore } from "../store";
 import { useState } from "react";
 import { observer } from "mobx-react-lite";
-import uuid from 'react-uuid';
+import uuid from "react-uuid";
 function Task() {
   const { taskStore } = useStore();
+  // 增加
+  const [taskValue, setTaskValue] = useState("");
   //单选受控 mobx store去维护 input 把e.target.value 交给store修改
   function onChange(id, e) {
     console.log(e.target.value);
@@ -19,22 +21,18 @@ function Task() {
   function delTask(id) {
     taskStore.delTask(id);
   }
-  // 增加
-  const [taskValue,setTaskValue] = useState('')
-  function addTask(e){
-    console.log(e)
+
+  function addTask(e) {
+    console.log(e);
     //回车事件
-    if(e.key === 'Enter'){
-      taskStore.addTask(
-        {
-        id:uuid(),
-        name:taskValue,
-        isDone:false
-        }
-      )
-      setTaskValue('')
+    if (e.key === "Enter") {
+      taskStore.addTask({
+        id: uuid(),
+        name: taskValue,
+        isDone: false,
+      });
+      setTaskValue("");
     }
-   
   }
   return (
     <section className="todoapp">
@@ -45,8 +43,8 @@ function Task() {
           autoFocus
           autoComplete="off"
           placeholder="What needs to be done?"
-          onChange={(e)=>setTaskValue(e.target.value)}
-          onKeyUp={addTask}   
+          onChange={(e) => setTaskValue(e.target.value)}
+          onKeyUp={addTask}
         />
       </header>
       <section className="main">
@@ -83,7 +81,8 @@ function Task() {
       </section>
       <footer className="footer">
         <span className="todo-count">
-          Total Tasks: {taskStore.list.length}&nbsp;&nbsp;&nbsp;&nbsp; Done: {taskStore.isFinishedLength()}
+          Total Tasks: {taskStore.list.length}&nbsp;&nbsp;&nbsp;&nbsp; Done:{" "}
+          {taskStore.isFinishedLength()}
         </span>
       </footer>
     </section>

@@ -36,12 +36,11 @@ class TaskStore {
     this.list = this.list.filter((item) => item.id !== id);
   };
   // 增加任务
-  addTask = (task) =>{
-    this.list.push(task)
-  }
-  isFinishedLength(){
-    return this.list.filter(item=>item.isDone).length
-
+  addTask = (task) => {
+    this.list.push(task);
+  };
+  isFinishedLength() {
+    return this.list.filter((item) => item.isDone).length;
   }
 }
 export default TaskStore;
